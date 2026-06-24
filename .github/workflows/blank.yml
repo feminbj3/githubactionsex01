@@ -21,3 +21,11 @@ jobs:
       - name: Run a one-line script
         run: echo "Hello, world!"
 
+      # Runs the npm install command using the runners shell
+      - name: Install dependencies
+        run: npm install
+      
+      # Run the test and display the results
+      - name: Run tests
+        run: npm test
+
